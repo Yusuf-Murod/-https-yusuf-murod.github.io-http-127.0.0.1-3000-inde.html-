@@ -1,24 +1,45 @@
-.block{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px 0;
-    position: relative;
-    left: 5%;
+html,
+body {
+    height: 100%;
 }
-.contect{
+
+
+@media (max-height: 600px) {
+    .table__cell {
+        display: inline;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+.table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.table__cell{
     width: 600px;
     height: 500px;
     background-color: rgb(255, 255, 255);
     border: 6px solid black;
-    transition: all 0.2s ease-in-out;
+    transition: all 0s linear;
     position: relative;
     left: 100px;
+    display: inline-table ;
+    height: 500px;
+    transition-duration: 0.5s;
     
 }
 img{
-    margin-left: 25px;
+    margin-left: 30px;
     margin-top: 15px;
-    transition: all 0.5 ease-in-out;
+    transition: all 0.5 linear;
+    display: block;
+    max-width: 90%;
+    max-height: 100%;
+    
 }
 
 body{
