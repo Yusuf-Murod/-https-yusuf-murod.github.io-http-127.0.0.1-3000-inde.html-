@@ -1,6 +1,9 @@
 .block{
-    display: inline-flex;
-    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 0;
+    position: relative;
+    left: 5%;
 }
 .contect{
     width: 600px;
