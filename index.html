@@ -3,141 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио - Юрий Ключевский</title>
+    <title>Юрий Ключевский</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f7f7f7;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
             color: #333;
-            background: url(https://wallpapers.com/images/hd/red-demon-with-horns-hacker-logo-mwisiuvzot1zz14c.jpg) no-repeat center center/cover;
-            
         }
 
         header {
-            background: url(https://img.freepik.com/free-psd/hacker-3d-psd-text-effect_165789-733.jpg) no-repeat center center/cover;
+            background: #2d3e50;
             color: #fff;
-            padding: 582px 20px;
-        }
-
-        .portfolio {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        .portfolio h1 {
+            padding: 50px 20px;
             text-align: center;
-            margin-bottom: 20px;
-            font-size: 4pc;
-            color: #00bfff;
-            transition: all 0.5s linear;
-        }
-        .portfolio h1:hover {
-            transform: translateY(-10px) scale(1.1);
         }
 
-        .portfolio-grid {
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 18px;
+        }
+
+        header .avatar {
+            margin-top: 20px;
+        }
+
+        header .avatar img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+
+        #portfolio {
+            background: #f5f8fc;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #portfolio h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 6pc;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
         }
 
-        .portfolio-item {
-            background: #fff;
+        .project {
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 8px;
             overflow: hidden;
+            background: #fff;
             transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .portfolio-item:hover {
-            transform: scale(1.05);
-            border: 3px solid aqua;
+        .project:hover {
+            transform: translateY(-5px);
         }
 
-        .portfolio-item img {
+        .project img {
             width: 100%;
             height: auto;
         }
 
-        .portfolio-item h3 {
-            font-size: 1.2rem;
-            margin: 10px;
+        .project h3 {
+            margin: 15px;
+            font-size: 20px;
         }
 
-        .portfolio-item p {
-            margin: 10px;
-            font-size: 0.9rem;
+        .project p {
+            margin: 0 15px 15px;
+            font-size: 16px;
+            color: #666;
         }
 
         footer {
-            background: #333;
+            background: #2d3e50;
             color: #fff;
+            padding: 20px;
             text-align: center;
-            padding: 50px 0;
-            margin-top: 6pc;
-            display: flex;
-            justify-content: center;
-            align-items: end;
-            font-size: 1.2rem;
         }
 
         footer a {
-            color: #00bfff;
+            color: #4da7fe;
             text-decoration: none;
-            margin: 0 10px;
         }
 
-        footer a:hover {
-            text-decoration: underline;
+        footer .social {
+            margin: 10px 0;
         }
-        
+
+        footer .social a {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        footer .contact-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            color: #fff;
+            background: #4da7fe;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        footer .contact-btn:hover {
+            background: #3583d6;
+        }
     </style>
 </head>
 <body>
     <header>
+        <h1>Юрий Ключевский</h1>
+        <p>Фрилансер, веб-разработчик, создание сайтов</p>
+        <div class="avatar">
+            <img src="https://img.freepik.com/free-psd/hacker-3d-psd-text-effect_165789-733.jpg" alt="Avatar">
+        </div>
     </header>
 
-    <section class="portfolio">
-        <h1>Портфоио</h1>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
+    <section id="portfolio">
+        <h2>Портфолио</h2>
+        <div class="projects">
+            <div class="project">
                 <img src="https://img.freepik.com/free-psd/hacker-3d-psd-text-effect_165789-733.jpg" alt="Многостраничный сайт">
                 <h3>Многостраничный сайт</h3>
-                <p>Версия многостраничного сайта.</p>
+                <p>Версия многостраничного сайта</p>
             </div>
-            <div class="portfolio-item">
+            <div class="project">
                 <img src="https://img.freepik.com/free-psd/hacker-3d-psd-text-effect_165789-733.jpg" alt="Адаптивный лендинг">
                 <h3>Адаптивный лендинг</h3>
-                <p>Версия многостраничного сайта.</p>
+                <p>Версия адаптивного сайта</p>
             </div>
-            <div class="portfolio-item">
+            <div class="project">
                 <img src="https://img.freepik.com/free-psd/hacker-3d-psd-text-effect_165789-733.jpg" alt="Личный сайт">
                 <h3>Личный сайт</h3>
-                <p>Версия многостраничного сайта.</p>
+                <p>Версия личного сайта</p>
             </div>
-            <div class="portfolio-item">
-                <img src="https://img.freepik.com/free-psd/hacker-3d-psd-text-effect_165789-733.jpg" alt="Интернет-магазин">
-                <h3>Интернет-магазин</h3>
-                <p>Версия многостраничного сайта.</p>
+            <div class="project">
+                <img src="https://img.freepik.com/free-psd/hacker-3d-psd-text-effect_165789-733.jpg" alt="Интернет магазин">
+                <h3>Интернет магазин</h3>
+                <p>Версия интернет-магазина</p>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; Юрий Ключевский</p>
-        <p>Мои профили в социальных сетях:</p>
-        <a href="#">VK</a>
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
+        <p>© Юрий Ключевский</p>
+        <p>HTML, верстка и разработка сайтов</p>
+        <div class="social">
+            <a href="#">VK</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        <a href="#" class="contact-btn">Связаться ВКонтакте</a>
     </footer>
 </body>
 </html>
