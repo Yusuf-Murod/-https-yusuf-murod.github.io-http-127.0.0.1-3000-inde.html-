@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Юрий Ключевский</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="website icon" type="png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1tW-b3IHGA0tGs6w46xMXZpwr5yETnQzBRQ&s">
+    <link rel="website icon" type="png" href="http://127.0.0.1:3002/1737641427540.jpg">
     <style>
         body {
             margin: 0;
@@ -14,9 +14,9 @@
         }
 
         header {
-            background: #2d3e50;
+            background: url(http://127.0.0.1:3002/1737641427540.jpg) repeat scroll 0  ;
             color: #fff;
-            padding: 50px 20px;
+            padding: 382px 20px;
             text-align: center;
         }
 
@@ -35,8 +35,8 @@
         }
 
         header .avatar img {
-            width: 50px;
-            height: 50px;
+            width: 300px;
+            height: 300px;
             border-radius: 50%;
             border: 2px solid #fff;
         }
@@ -54,8 +54,8 @@
 
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 90px;
         }
 
         .project {
@@ -91,7 +91,7 @@
             background: #2d3e50;
             color: #fff;
             padding: 20px;
-            display: flex;
+            text-align: center;
         }
 
         footer a {
@@ -101,8 +101,6 @@
 
         footer .social {
             margin: 10px 0;
-            
-
         }
 
         footer .social a {
@@ -111,23 +109,29 @@
         }
 
         footer .contact-btn {
-            display: flex;
-            position: relative;
+            display: inline-block;
             margin-top: 10px;
             padding: 10px 20px;
             color: aqua;
-            background: #000000;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
             border-radius: 5px;
             text-decoration: none;
             transition: all 0.2s linear;
-            transform: scale(1);
-            transform: translateY(-5px) translateX(10px);
+            animation: gradient 15s ease infinite;
         }
 
-        footer .contact-btn:hover {
-            transform: scale(1.15) translateY(-10px)    translateX(10px);
-        }
         
+    @keyframes gradient {
+	0% {
+		background-position: 0% 100%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
     </style>
 </head>
