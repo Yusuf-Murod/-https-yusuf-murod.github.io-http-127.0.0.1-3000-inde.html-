@@ -1,184 +1,61 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Юрий Ключевский</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="website icon" type="png" href="1737641427540.jpg">
+    <title>Document</title>
     <style>
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            color: #333;
-        }
-
-        header {
-            background: black;
-            color: aqua;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        header p {
-            margin: 10px 0 0;
-            font-size: 18px;
-        }
-
-        header .avatar {
-            margin-top: 20px;
-        }
-
-        header .avatar img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 2px solid #fff;
-        }
-
-        #portfolio {
-            background: #f5f8fc;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        #portfolio h2 {
-            font-size: 28px;
-            margin-bottom: 30px;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .project {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            background: #fff;
-            transition: transform 0.3s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .project:hover {
-            transform: translateY(-5px);
-        }
-
-        .project img {
-            width: 100%;
-            height: auto;
-        }
-
-        .project h3 {
-            margin: 15px;
-            font-size: 20px;
-        }
-
-        .project p {
-            margin: 0 15px 15px;
-            font-size: 16px;
-            color: #666;
-        }
-
-        footer {
-            background: #2d3e50;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer a {
-            color: #4da7fe;
-            text-decoration: none;
-        }
-
-        footer .social {
-            margin: 10px 0;
-        }
-
-        footer .social a {
-            margin: 0 10px;
-            font-size: 20px;
-        }
-
-        footer .contact-btn {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 20px;
-            color: aqua;
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            border-radius: 5px;
-            text-decoration: none;
-            transition: all 0.2s linear;
-            animation: gradient 15s ease infinite;
-        }
-
         
-    @keyframes gradient {
-	0% {
-		background-position: 0% 100%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url();
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
     </style>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <h1>Юрий Ключевский</h1>
-        <p>Фрилансер, веб-разработчик, создание сайтов</p>
-        <div class="avatar">
-            <img src="https://img.freepik.com/free-psd/hacker-3d-psd-text-effect_165789-733.jpg" alt="Avatar">
-        </div>
-    </header>
 
-    <section id="portfolio">
-        <h2>Портфолио</h2>
-        <div class="projects">
-            <div class="project">
-                <img src="https://img.freepik.com/free-psd/hacker-3d-psd-text-effect_165789-733.jpg" alt="Многостраничный сайт">
-                <h3>Многостраничный сайт</h3>
-                <p>Версия многостраничного сайта</p>
-            </div>
-            <div class="project">
-                <img src="https://img.freepik.com/free-psd/hacker-3d-psd-text-effect_165789-733.jpg" alt="Адаптивный лендинг">
-                <h3>Адаптивный лендинг</h3>
-                <p>Версия адаптивного сайта</p>
-            </div>
-            <div class="project">
-                <img src="https://img.freepik.com/free-psd/hacker-3d-psd-text-effect_165789-733.jpg" alt="Личный сайт">
-                <h3>Личный сайт</h3>
-                <p>Версия личного сайта</p>
-            </div>
-            <div class="project">
-                <img src="https://img.freepik.com/free-psd/hacker-3d-psd-text-effect_165789-733.jpg" alt="Интернет магазин">
-                <h3>Интернет магазин</h3>
-                <p>Версия интернет-магазина</p>
-            </div>
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 3"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 4"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 5"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 2"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 6"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 7"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 8"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 9"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
+            <div class="item" style="--position: 10"><img src="http://127.0.0.1:5500/html/image%20copy.png" alt=""></div>
         </div>
-    </section>
-
-    <footer>
-        <p>© Юрий Ключевский</p>
-        <p>HTML, верстка и разработка сайтов</p>
-        <div class="social">
-            <a href="#">VK</a>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-        </div>
-        <a href="#" class="contact-btn">Связаться ВКонтакте</a>
-    </footer>
+        
 </body>
 </html>
